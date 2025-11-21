@@ -1,0 +1,110 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg-default, #fafafa);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+img {
+  display: block;
+}
+
+body.dark .MuiDataGrid-root,
+body.dark .MuiDataGrid-cell,
+body.dark .MuiDataGrid-columnHeaderTitle,
+body.dark .MuiDataGrid-cellContent {
+  color: #ffffff !important;
+}
+
+body.dark .MuiCheckbox-root svg,
+body.dark .MuiDataGrid-checkboxInput svg,
+body.dark .MuiIconButton-root svg {
+  fill: #ffffff !important;
+}
+
+
+body.dark .MuiTablePagination-root,
+body.dark .MuiTablePagination-caption,
+body.dark .MuiTablePagination-selectIcon {
+  color: #ffffff !important;
+}
+
+
+body.dark .MuiDataGrid-row {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.dark .MuiDataGrid-row:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark .MuiDataGrid-root {
+  background-color: #0f172a !important;           
+  color: #f8fafc !important;                       
+}
+
+body.dark .MuiDataGrid-cell {
+  color: #e2e8f0 !important;
+}
+
+body.dark .MuiDataGrid-row {
+  background-color: #1e293b !important;
+}
+
+body.dark .MuiDataGrid-row:hover {
+  background-color: #334155 !important;
+}
+
+body.dark .MuiDataGrid-columnHeaders {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark .MuiTablePagination-root {
+  color: #f1f5f9 !important;
+}
+
+body.dark .MuiTablePagination-selectLabel,
+body.dark .MuiTablePagination-displayedRows {
+  color: #f1f5f9 !important;
+}
+
+

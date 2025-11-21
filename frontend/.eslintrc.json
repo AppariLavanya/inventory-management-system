@@ -1,0 +1,22 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+
+  "rules": {
+    // Disable annoying hook warnings (you requested this earlier)
+    "react-hooks/exhaustive-deps": "off",
+
+    // Allow unused vars ONLY if they start with "_" (good for placeholders)
+    "no-unused-vars": [
+      "warn",
+      { "vars": "all", "args": "after-used", "argsIgnorePattern": "^_" }
+    ],
+
+    // Clean console output while allowing console.error()
+    "no-console": [
+      "warn",
+      { "allow": ["warn", "error"] }
+    ]
+  }
+}
+
+
