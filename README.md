@@ -1,12 +1,10 @@
 📦 Inventory Management System (Full Stack)
 
-
 A complete Inventory & Order Management System built with:
 
 React + Material UI • Spring Boot • MySQL • JWT Auth • Excel/PDF Export • Analytics
 
 🚀 Features
-
 🔐 Authentication
 
 JWT secure login
@@ -27,29 +25,31 @@ Search, Sort, Filters
 
 Bulk delete
 
-Export to PDF & Excel
+Export to Excel & PDF
 
 🛒 Order Management
 
-Create, edit, view, delete orders
+Create, Edit, View, Delete orders
 
 Auto total calculation
 
-Validations
+Quantity validations
 
-Status updates
+Order status updates
 
 ⚠️ Low Stock Monitoring
 
-Critical / Low / Medium indicators
+Real-time alerts
+
+Severity levels (Critical / Low / Medium)
 
 Suggested reorder quantity
 
-Export low stock report
+Export low-stock report
 
 📊 Analytics Dashboard
 
-Daily Sales Chart
+Daily Sales Line Chart
 
 Category Distribution Pie Chart
 
@@ -57,10 +57,12 @@ Top Products
 
 Revenue Summary
 
+Low Stock Summary
+
 📁 Project Structure
 project-root/
-│── backend/          # Spring Boot API + JWT + MySQL
-│── frontend/         # React App (Material UI)
+│── backend/          # Spring Boot API + JWT + Database
+│── frontend/         # React + Material UI UI
 │── README.md         # Main documentation
 
 🛠️ Backend (Spring Boot)
@@ -72,11 +74,11 @@ Maven
 
 MySQL
 
-Setup
+Database Setup
 CREATE DATABASE inventory_db;
 
 
-Update credentials in:
+Update database credentials in:
 
 backend/src/main/resources/application.properties
 
@@ -84,7 +86,7 @@ Run Backend
 mvn spring-boot:run
 
 
-Runs on → http://localhost:8080
+Backend runs on → http://localhost:8080
 
 Main API Endpoints
 /api/products
@@ -93,8 +95,9 @@ Main API Endpoints
 /api/products/export/excel
 /api/products/export/pdf
 
+Swagger Documentation
 
-Swagger → http://localhost:8080/swagger-ui.html
+👉 http://localhost:8080/swagger-ui.html
 
 🎨 Frontend (React + Material UI)
 Setup
@@ -103,16 +106,30 @@ npm install
 npm start
 
 
-Runs on → http://localhost:3000
+Frontend runs on → http://localhost:3000
 
 🔑 Default Login Credentials
 Email: user@gmail.com
 Password: user123
 
 📤 Export Features
-Excel Export
+📄 PDF Export
 
-4 sheets:
+Includes:
+
+Products Table
+
+Orders Table
+
+Low Stock Items
+
+Analytics Summary
+
+Charts (Bar + Pie)
+
+📊 Excel Export
+
+Comes with 4 sheets:
 
 Products
 
@@ -122,28 +139,28 @@ Low Stock
 
 Analytics Summary
 
-PDF Export
-
-Products table
-
-Orders table
-
-Low stock
-
-Analytics summary
-
-Bar + Pie charts
-
 🧑‍💻 Tech Stack
 Frontend
 
-React • Material UI • Axios • React Router
+React
+
+Material UI
+
+Axios
+
+React Router
 
 Backend
 
-Spring Boot • Spring Security • JWT
-JPA • Hibernate
-Apache POI • iText • JFreeChart
+Spring Boot
+
+Spring Security + JWT
+
+JPA + Hibernate
+
+Apache POI (Excel)
+
+iText / JFreeChart (PDF)
 
 Database
 
@@ -152,17 +169,17 @@ MySQL
 📝 How to Run the Full Project
 
 1️⃣ Start MySQL
-2️⃣ Run backend
+2️⃣ Run Backend
 
 mvn spring-boot:run
 
 
-3️⃣ Run frontend
+3️⃣ Run Frontend
 
 npm start
 
 
-4️⃣ Open browser → http://localhost:3000
+4️⃣ Open → http://localhost:3000
 
 🤝 Contributing
 
@@ -170,5 +187,5 @@ Pull requests are welcome!
 
 📜 License
 
-MIT License
+Released under the MIT License.
 
